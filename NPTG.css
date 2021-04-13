@@ -1,11 +1,17 @@
 body {
-    font-family: Palatino Linotype, serif;
+    font-family: "Lato", sans-serif;
     background-image: url(https://www.directnativeplants.com/wp-content/uploads/photos/96626225.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-#container{
-    background-color: rgba(255,255,255,0.9);
 
+#main-cont {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    /*height: 95vh;*/
 }
 
+.btn-default {
+    background-color: rgba(3, 34, 9, 0.8);
+    color: white;
+}
