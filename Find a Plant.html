@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NPTG Map</title>
+    <title>NPTG Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="NPTG.css">
 
 </head>
-<body class="map">
+<body class="find">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -18,25 +18,25 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 <div class="container-fluid">
 
-    <div id="main-cont" class=" col-xs-11 col-lg-6 h-100 mx-auto mb-2 mt-3 p-3">
+    <div id="main-cont" class=" col-xs-11 col-lg-5 h-100 mx-auto mb-2 mt-3 p-3">
         <div id="heading" class="text-center p-3">
             <h1>Garden Locations</h1>
             <h5>Click on one of our teaching gardens below to see the plants that inhabit it!</h5>
         </div>
 
         <div id="sub-cont" class="mx-auto">
-            <div id="map" class="content-center">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1oetYsDNsZ1anprfVW_mBI1COfbqGtuXX"
-                        class="w-100" style="border-radius: 25px" width="640" height="480"></iframe>
-            </div>
 
             <div id="buttons" class="mb-3">
-                <a href="Find%20a%20Plant.html" class="btn btn-default btn-lg btn-block mt-3">Find a Plant</a>
+                <a href="map.html" class="btn btn-default btn-lg btn-block mt-3">Map</a>
                 <a href="https://friendsbaltsustainability.wordpress.com/"
                    class="btn btn-default btn-lg btn-block">Blog</a>
+            </div>
+
+            <div id="map" class="content-center">
+                <iframe src=""
+                        class="w-100" style="border-radius: 25px" width="640" height="480"></iframe>
             </div>
         </div>
     </div>

@@ -1,9 +1,19 @@
 body {
     font-family: "Lato", sans-serif;
+
+}
+
+body.map{
+    background-image: url(https://hgic.clemson.edu/wp-content/uploads/2018/09/Lobelia-cardinalis-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.find{
     background-image: url(https://www.directnativeplants.com/wp-content/uploads/photos/96626225.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 #main-cont {
     background-color: rgba(255, 255, 255, 0.75);
