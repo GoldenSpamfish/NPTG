@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Find a Plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Find a Plant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Table.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-scripts/Table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-sheets-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-scripts/google-sheets-html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-scripts/SheetAPI-plants-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-scripts/SheetAPI-plants-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-scripts/google-sheets-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-scripts/google-sheets-html.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1qt9kfl3FwBo7atDKfbvo1noOVw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -59,6 +57,16 @@
       <recent name="B:\Programming\Web\NPTG\tabletests" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NPTG/test-scripts/Table.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Table.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,7 +82,7 @@
       <workItem from="1618441626604" duration="682000" />
       <workItem from="1618456627399" duration="509000" />
       <workItem from="1618872534986" duration="3829000" />
-      <workItem from="1619702399501" duration="1002000" />
+      <workItem from="1619702399501" duration="3021000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1617889198877</created>
@@ -118,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618442100342</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="local update (hopefully doesnt break anything)">
+      <created>1619704108410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619704108410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +158,7 @@
     <MESSAGE value="post class 4/13" />
     <MESSAGE value="map cleanup + subpage" />
     <MESSAGE value="forgot text" />
-    <option name="LAST_COMMIT_MESSAGE" value="forgot text" />
+    <MESSAGE value="local update (hopefully doesnt break anything)" />
+    <option name="LAST_COMMIT_MESSAGE" value="local update (hopefully doesnt break anything)" />
   </component>
 </project>

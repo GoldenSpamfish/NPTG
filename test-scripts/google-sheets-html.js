@@ -2,8 +2,8 @@ google.charts.load('current', {packages: ['table']});
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1v6i3MFlBfTom7p_WZHs-hK850D2pTg2kk4XJbrLlkd8/gviz/tq?output=html&usp=sharing');
-    query.setQuery('SELECT A, B, C, D, E label A "Scientific Name", B "Common Name", C "Link", D "Growth Form", E "Family"');
+    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8/edit?usp=sharing');
+    query.setQuery('SELECT A, B, C label A "Image", B "Scientific Name", C "Common Name"');
     query.send(handleQueryResponse);
 }
 

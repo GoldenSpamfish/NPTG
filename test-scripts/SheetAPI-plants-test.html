@@ -11,7 +11,7 @@
 <button id="authorize_button" style="display: none;">Authorize</button>
 <button id="signout_button" style="display: none;">Sign Out</button>
 
-<h4 id="head" style="white-space: pre-wrap;">Scientific Name   Common name</h4>
+<h4 id="head" style="white-space: pre-wrap;">Image   Scientific Name   Common name</h4>
 <p id="plants" style="white-space: pre-wrap;"></p>
 
 <script type="text/javascript">
@@ -103,19 +103,19 @@
 
     /**
      * Plant version:
-     * https://docs.google.com/spreadsheets/d/1v6i3MFlBfTom7p_WZHs-hK850D2pTg2kk4XJbrLlkd8/edit#gid=1716470935
+     * https://docs.google.com/spreadsheets/d/1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8/edit#gid=1716470935
      */
     function listMajors() {
         gapi.client.sheets.spreadsheets.values.get({
-            spreadsheetId: '1v6i3MFlBfTom7p_WZHs-hK850D2pTg2kk4XJbrLlkd8',
+            spreadsheetId: '1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8',
             range: 'A2:B',
         }).then(function(response) {
             var range = response.result;
             if (range.values.length > 0) {
                 for (i = 0; i < range.values.length; i++) {
                     var row = range.values[i];
-                    // Print columns A and E, which correspond to indices 0 and 4.
-                    appendPre(row[0] + ', ' + row[1]);
+                    //
+                    appendPre(row[0] + ', ' + row[1] + ', ' + row[2]);
                 }
             } else {
                 appendPre('No data found.');
