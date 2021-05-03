@@ -108,9 +108,8 @@
         let newRow = table.insertRow(-1);
 
         let newImg = newRow.insertCell(0)
-        let img = document.createTextNode("test");
-        // let img= document.createElement('img');
-        // img.src= picture;
+        let img= document.createElement('img');
+        img.src= this.picture;
         newImg.appendChild(img)
         
         let newSciName = newRow.insertCell(1)
