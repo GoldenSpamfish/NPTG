@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="" />
+    <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Find a Plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Find a Plant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPTG.css" beforeDir="false" afterPath="$PROJECT_DIR$/NPTG.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1qt9kfl3FwBo7atDKfbvo1noOVw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -129,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619704108410</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new sheet api approach">
+      <created>1620068638325</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620068638325</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new sheet api approach">
+      <created>1620068713563</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620068713563</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +174,7 @@
     <MESSAGE value="map cleanup + subpage" />
     <MESSAGE value="forgot text" />
     <MESSAGE value="local update (hopefully doesnt break anything)" />
-    <option name="LAST_COMMIT_MESSAGE" value="local update (hopefully doesnt break anything)" />
+    <MESSAGE value="new sheet api approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="new sheet api approach" />
   </component>
 </project>

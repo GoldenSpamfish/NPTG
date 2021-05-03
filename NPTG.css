@@ -25,3 +25,14 @@ body.find{
     background-color: rgba(3, 34, 9, 0.8);
     color: white;
 }
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+
+    font-size: 110%;
+}
+table{
+    margin: 0 auto;
+}
