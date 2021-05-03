@@ -55,14 +55,12 @@
                     // included, separated by spaces.
                     let SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
-                    let authorizeButton = document.getElementById('authorize_button');
-                    let signoutButton = document.getElementById('signout_button');
 
                     /**
                      *  On load, called to load the auth2 library and API client library.
                      */
                     function handleClientLoad() {
-                        gapi.load('client:auth2', initClient);
+                        gapi.load('client', initClient);
                     }
 
                     /**
