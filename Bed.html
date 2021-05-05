@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NPTG individual beds</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="NPTG.css">
+
+</head>
+<body class="bed">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<div class="container-fluid">
+
+    <div id="main-cont" class=" col-xs-11 col-lg-6 h-100 mx-auto mb-2 mt-3 p-3">
+        <div id="heading" class="text-center p-3">
+            <h1>Find a Plant</h1>
+            <h5>Search for a plant by common name, scientific name, or bed.</h5>
+        </div>
+
+        <div id="sub-cont" class="mx-auto">
+
+            <div id="buttons" class="mb-3">
+                <a href="map.html" class="btn btn-default btn-lg btn-block mt-3">Map</a>
+                <a href="https://friendsbaltsustainability.wordpress.com/"
+                   class="btn btn-default btn-lg btn-block">Blog</a>
+            </div>
+
+            <div id="map" class="content-center">
+                <table id="sheet">
+                    <tr>
+                        <th>Image</th>
+                        <th>Scientific Name</th>
+                        <th>Common Name</th>
+                    </tr>
+
+                </table>
+                <script type="text/javascript">
+                    // Client ID and API key from the Developer Console
+                    //let CLIENT_ID = '1013917813484-34c0pv9sct0m2ikhhfdf2ns16os4kdca.apps.googleusercontent.com';
+                    let API_KEY = 'AIzaSyBEYqo-ngxvnG1PsM_q6FujijBcNzZO8vA';
+
+                    // Array of API discovery doc URLs for APIs used by the quickstart
+                    let DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+
+                    // Authorization scopes required by the API; multiple scopes can be
+                    // included, separated by spaces.
+                    let SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
+
+
+                    /**
+                     *  On load, called to load the auth2 library and API client library.
+                     */
+                    function handleClientLoad() {
+                        gapi.load('client', initClient);
+                    }
+
+                    /**
+                     *  Initializes the API client library and sets up sign-in state
+                     *  listeners.
+                     */
+                    function initClient() {
+                        gapi.client.init({
+                            apiKey: API_KEY,
+                            //clientId: CLIENT_ID,
+                            discoveryDocs: DISCOVERY_DOCS,
+                            scope: SCOPES
+                        }).then(function () {
+                            genTable();
+                        }, function(error) {
+                            appendPre(JSON.stringify(error, null, 2));
+                        });
+                    }
+
+
+                    /**
+                     * Append a pre element to the body containing the given message
+                     * as its text node. Used to display the results of the API call.
+                     *
+                     * @param {string} message Text to be placed in pre element.
+                     */
+                    function appendPre(message) {
+                        let pre = document.getElementById('plants');
+                        let textContent = document.createTextNode(message + '\n');
+                        pre.appendChild(textContent);
+                    }
+
+
+                    /**
+                     * Plant version:
+                     * https://docs.google.com/spreadsheets/d/1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8/edit#gid=1716470935
+                     */
+
+                    function addData (sheet){
+                        let tblSheet = sheet;
+                        for (i=0; sheet.length; i++) {
+                            let picture = tblSheet[i][0];
+                            let sciName = tblSheet[i][2];
+                            let comName = tblSheet[i][1];
+
+                            let table = document.getElementById("sheet");
+                            let newRow = table.insertRow(-1);
+
+                            let newImg = newRow.insertCell(0)
+                            let img = document.createElement('img');
+                            img.src = picture;
+                            img.height = 220;
+                            img.width = 220;
+                            newImg.appendChild(img)
+
+                            let newSciName = newRow.insertCell(1);
+                            let newSci = document.createTextNode(sciName);
+                            newSciName.appendChild(newSci);
+
+                            let newComName = newRow.insertCell(2)
+                            let newCom = document.createTextNode(comName);
+                            newComName.appendChild(newCom);
+
+                        }
+                    }
+
+                    function genTable() {
+                        let sheet=[];
+                        gapi.client.sheets.spreadsheets.values.get({
+                            spreadsheetId: '1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8',
+                            range: 'A2:O',
+                        }).then(function(response) {
+                            let range = response.result;
+                            if (range.values.length > 0) {
+                                for (let i = 0; i < range.values.length; i++) {
+                                    let row = range.values[i];
+                                    // Makes array from sheet
+                                    console.log(window.location.search)
+                                    if(row[3] === "14") {
+                                        sheet.push([row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14]])
+                                    }
+                                    }
+                                //passes sheet to addData function
+                                addData(sheet);
+                            } else {
+                                appendPre('No data found.');
+                            }
+                        }, function(response) {
+                            appendPre('Error: ' + response.result.error.message);
+                        });
+                    }
+
+                </script>
+
+                <script async defer src="https://apis.google.com/js/api.js"
+                        onload="this.onload=function(){};handleClientLoad()"
+                        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+                </script>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

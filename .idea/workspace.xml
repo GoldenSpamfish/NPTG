@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Find a Plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Find a Plant.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPTG.css" beforeDir="false" afterPath="$PROJECT_DIR$/NPTG.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <workItem from="1618456627399" duration="509000" />
       <workItem from="1618872534986" duration="3829000" />
       <workItem from="1619702399501" duration="3021000" />
-      <workItem from="1620244867624" duration="4280000" />
+      <workItem from="1620244867624" duration="4690000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1617889198877</created>
@@ -169,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620072091223</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Now uses array instead of raw text">
+      <created>1620249984464</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620249984464</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +205,7 @@
     <MESSAGE value="new sheet api approach" />
     <MESSAGE value="updated find a plant" />
     <MESSAGE value="removed OAuth" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed OAuth" />
+    <MESSAGE value="Now uses array instead of raw text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now uses array instead of raw text" />
   </component>
 </project>
