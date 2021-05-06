@@ -53,3 +53,11 @@ table{
     min-height: 100%;
     height: 100%;
 }
+
+h1 {
+    font-size: 4vw;
+}
+
+h5 {
+    font-size: 4vw;
+}
