@@ -24,7 +24,9 @@ body.bed{
 #main-cont {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 25px;
-    /*height: 95vh;*/
+    font-size: 100vh;
+    min-height: 100%;
+    height: 100%;
 }
 
 .btn-default {
@@ -41,4 +43,21 @@ table, th, td{
 }
 table{
     margin: 0 auto;
+}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 100hw;
+}
+
+h5 {
+    font-size: 100hw;
 }
