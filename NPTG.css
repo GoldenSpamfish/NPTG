@@ -65,12 +65,12 @@ input {
 
 @media screen and (max-width: 400px) {
   h1 {
-    font-size: 64px;
+    font-size: 64pt;
   }
 }
 
 @media screen and (max-width: 400px) {
   h5 {
-    font-size: 26.56px;
+    font-size: 26.56pt;
   }
 }
