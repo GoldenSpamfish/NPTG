@@ -68,3 +68,15 @@ input {
     font-size: 64px;
   }
 }
+
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 64px;
+  }
+
+    
+@media screen and (min-width: 400px) {
+  h5 {
+    font-size: 26.56px;
+  }
+}
