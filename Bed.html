@@ -22,8 +22,8 @@
 
     <div id="main-cont" class=" col-xs-11 col-lg-6 h-100 mx-auto mb-2 mt-3 p-3">
         <div id="heading" class="text-center p-3">
-            <h1>Welcome to Bed ###</h1>
-            <h5>Below is a full list of the plants you will find at the ### Proper name for Bed### Bed</h5>
+            <h1 id="title">Welcome to Bed ###</h1>
+            <h5 id="desc">Loading...</h5>
         </div>
 
         <div id="sub-cont" class="mx-auto">
@@ -44,6 +44,7 @@
 
                 </table>
                 <script type="text/javascript">
+
                     // Client ID and API key from the Developer Console
                     //let CLIENT_ID = '1013917813484-34c0pv9sct0m2ikhhfdf2ns16os4kdca.apps.googleusercontent.com';
                     let API_KEY = 'AIzaSyBEYqo-ngxvnG1PsM_q6FujijBcNzZO8vA';
@@ -101,6 +102,8 @@
 
                     function addData (sheet){
                         let tblSheet = sheet;
+
+                        //makes table
                         for (i=0; sheet.length; i++) {
                             let picture = tblSheet[i][0];
                             let sciName = tblSheet[i][2];
@@ -124,6 +127,12 @@
                             let newCom = document.createTextNode(comName);
                             newComName.appendChild(newCom);
 
+                            //makes page heading
+                            let bedNum = window.location.search.substring(1);
+                            document.getElementById("title").innerHTML= "Welcome to Bed " + bedNum;
+                            document.getElementById("desc").innerHTML= "Below is a full list of the plants you will find at the " +sheet[0][8]  + " Bed"
+
+
                         }
                     }
 
@@ -140,7 +149,7 @@
                                 for (let i = 0; i < range.values.length; i++) {
                                     let row = range.values[i];
                                     // Makes array from sheet
-                                    let bedQuery=row[3]+"?";
+                                    let bedQuery= "?" + row[3];
                                     if(bedQuery === inURL) {
                                         sheet.push([row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14]])
                                     }
