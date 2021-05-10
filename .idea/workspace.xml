@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/NPTG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NPTG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Find a Plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Find a Plant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPTG.css" beforeDir="false" afterPath="$PROJECT_DIR$/NPTG.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1618872534986" duration="3829000" />
       <workItem from="1619702399501" duration="3021000" />
       <workItem from="1620244867624" duration="5914000" />
-      <workItem from="1620674923150" duration="6542000" />
+      <workItem from="1620674923150" duration="7193000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1617889198877</created>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620677745074</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added searching and removed duplicates">
+      <created>1620684595594</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620684595594</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +245,7 @@
     <MESSAGE value="Added page for all beds" />
     <MESSAGE value="url page generation, automatic text, loading indicators" />
     <MESSAGE value="reverted vertical fit" />
-    <option name="LAST_COMMIT_MESSAGE" value="reverted vertical fit" />
+    <MESSAGE value="added searching and removed duplicates" />
+    <option name="LAST_COMMIT_MESSAGE" value="added searching and removed duplicates" />
   </component>
 </project>

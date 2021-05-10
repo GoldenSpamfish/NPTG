@@ -34,7 +34,9 @@
                    class="btn btn-default btn-lg btn-block">Blog</a>
             </div>
 
-            <div id="bed" class="content-center">
+            <input id="myInput" type="text" placeholder="Search..">
+
+            <div id="find" class="content-center" style="padding-top: 15px ">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script>
                     $(document).ready(function(){
@@ -46,13 +48,18 @@
                         });
                     });
                 </script>
-                <input id="myInput" type="text" placeholder="Search..">
-                <table id="sheet">
+
+                <table id="sheetHead">
+                    <thead>
                     <tr>
                         <th>Image</th>
                         <th>Scientific Name</th>
                         <th>Common Name</th>
                     </tr>
+                    </thead>
+                    <tbody id="sheet">
+
+                    </tbody>
 
                 </table>
                 <script type="text/javascript">
