@@ -130,7 +130,7 @@
                             //makes page heading
                             let bedNum = window.location.search.substring(1);
                             document.getElementById("title").innerHTML= "Welcome to Bed " + bedNum;
-                            document.getElementById("desc").innerHTML= "Below is a full list of the plants you will find at the " +sheet[0][8]  + " Bed"
+                            document.getElementById("desc").innerHTML= "Below is a full list of the plants you will find at the " +sheet[0][4]  + " Bed"
 
 
                         }
@@ -139,7 +139,7 @@
                     function genTable() {
                         let sheet=[];
                         let inURL=window.location.search;
-                        console.log(inURL);
+                        //console.log(inURL);
                         gapi.client.sheets.spreadsheets.values.get({
                             spreadsheetId: '1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8',
                             range: 'A2:O',
@@ -150,11 +150,9 @@
                                     let row = range.values[i];
                                     // Makes array from sheet
                                     let bedQuery= "?" + row[3];
+                                    //console.log(bedQuery)
                                     if(bedQuery === inURL) {
                                         sheet.push([row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14]])
-                                    }
-                                    if (sheet[0][0] == null){
-                                        sheet.push("Improper bed in url")
                                     }
                                     }
                                 //passes sheet to addData function
