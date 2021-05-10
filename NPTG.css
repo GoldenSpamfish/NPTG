@@ -63,14 +63,14 @@ input {
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-height: 1000px) {
   h1 {
-    font-size: 64pt;
+    font-size: 64px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-height: 1000px) {
   h5 {
-    font-size: 26.56pt;
+    font-size: 26.56px;
   }
 }
