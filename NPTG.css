@@ -74,6 +74,9 @@ input {
     font-size: 32px;
   }
   table, th, td{
-    font-size: 32px;
+    font-size: 24px;
+  }
+  input {
+  padding: 10px;
   }
 }
