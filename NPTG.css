@@ -52,14 +52,6 @@ table{
     height: 100%;
 }
 
-h1 {
-    
-}
-
-h5 {
-
-}
-
 input {
    margin: auto;
    width: 100%;
@@ -69,4 +61,29 @@ input {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.colap {
+  font-size: 18px;
+}
+
+@media screen and (min-height: 800px) {
+  h1 {
+    font-size: 64px;
+  }
+  h5 {
+    font-size: 26.56px;
+  }
+  .btn-default {
+    font-size: 32px;
+  }
+  table, th, td{
+    font-size: 24px;
+  }
+  input {
+  padding: 10px;
+  }
+  .colap {
+    font-size: 36px;
+  }
 }
