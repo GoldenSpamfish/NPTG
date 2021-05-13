@@ -1,5 +1,5 @@
 # NPTG
 Native Plant Teaching Gardens Website
 
-Table Test: https://script.google.com/home/projects/10ABoUIOb_tZwiiHlij2_J_Y_hxJXCiCewbAKhMW4zBw2CO1IHbDPgUhU/edit
 Drive Link: https://drive.google.com/drive/folders/1HkGzihaVYKykNt0zOnFxCkkCBd58xY8E?usp=sharing
+Database: https://docs.google.com/spreadsheets/d/1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8/edit?usp=sharing
