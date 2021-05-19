@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPTG.css" beforeDir="false" afterPath="$PROJECT_DIR$/NPTG.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bed.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Find a Plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Find a Plant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <workItem from="1620674923150" duration="10350000" />
       <workItem from="1620849154602" duration="3109000" />
       <workItem from="1620854195579" duration="1680000" />
-      <workItem from="1621450973275" duration="1798000" />
+      <workItem from="1621450973275" duration="2181000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1617889198877</created>
@@ -252,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620852890008</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added about page">
+      <created>1621452993748</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1621452993748</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +297,7 @@
     <MESSAGE value="cleaned up search" />
     <MESSAGE value="patched bed generation for the 4th time" />
     <MESSAGE value="added about this bed" />
-    <option name="LAST_COMMIT_MESSAGE" value="added about this bed" />
+    <MESSAGE value="added about page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added about page" />
   </component>
 </project>
