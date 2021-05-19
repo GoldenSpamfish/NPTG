@@ -3,6 +3,10 @@ body {
 
 }
 
+p {
+    font-size: 130%;
+    line-height: 130%;
+}
 body.map{
     background-image: url(https://hgic.clemson.edu/wp-content/uploads/2018/09/Lobelia-cardinalis-2.jpg);
     background-size: cover;
@@ -15,6 +19,11 @@ body.find{
 }
 body.bed{
     background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2016/02/violet-type-768x514.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.about{
+    background-image: url(http://cdn.shopify.com/s/files/1/0072/0909/1117/products/butterfly_weed_5af6457f-2221-478a-a762-7b16160263ea_1024x1024.jpg?v=1574106843);
     background-size: cover;
     background-attachment: fixed;
 }
