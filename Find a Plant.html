@@ -76,6 +76,8 @@
                     // included, separated by spaces.
                     let SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
+                    /** ^^^ These are all you need for readonly. If extra authentication is needed, this must be modified.
+                    /*
 
                     /**
                      *  On load, called to load the auth2 library and API client library.
@@ -104,7 +106,8 @@
 
                     /**
                      * Append a pre element to the body containing the given message
-                     * as its text node. Used to display the results of the API call.
+                     * as its text node. old version used to display the results of the API call.
+                     * Still used for error handling
                      *
                      * @param {string} message Text to be placed in pre element.
                      */
@@ -117,32 +120,50 @@
 
 
                     /**
-                     * Plant version:
+                     * Plant Spreadsheet link:
                      * https://docs.google.com/spreadsheets/d/1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8/edit#gid=1716470935
                      */
 
+                    /**
+                     * Important function
+                     * This function creates a populated table based on a 2D Array
+                     */
                     function addData (sheet){
                         let tblSheet = sheet;
+                        //localizes sheet array
+
+                        //migrates the rows of the sheet array
                         for (i=0; sheet.length; i++) {
+
+                            //gets columns of sheets and makes them into variables
                             let picture = tblSheet[i][0];
                             let sciName = tblSheet[i][2];
                             let comName = tblSheet[i][1];
 
+                            // gets table element from HTML and makes it editable by JS
                             let table = document.getElementById("sheet");
+
+                            // adds row to next position of table
                             let newRow = table.insertRow(-1);
 
+                            // adds column to row
                             let newImg = newRow.insertCell(0)
+                            //makes image element in the column with certain specifications
                             let img = document.createElement('img');
                             img.src = picture;
                             img.height = 220;
                             img.width = 220;
                             newImg.appendChild(img)
 
+                            // adds column to row
                             let newSciName = newRow.insertCell(1);
+                            // same as image, but uses text node element
                             let newSci = document.createTextNode(sciName);
                             newSciName.appendChild(newSci);
 
-                            let newComName = newRow.insertCell(2)
+                            // adds column to row
+                            let newComName = newRow.insertCell(2);
+                            // same as image, but uses text node element
                             let newCom = document.createTextNode(comName);
                             newComName.appendChild(newCom);
 
@@ -153,20 +174,34 @@
 
 
                     function genTable() {
+                        //makes sheet array
                         let sheet=[];
+
+                        // interfaces with the sheet itself via the ID in its url
                         gapi.client.sheets.spreadsheets.values.get({
                             spreadsheetId: '1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8',
+                            // range of cells accessible by the program
                             range: 'A2:O',
+
+                            // traverses the database. Leave the top part be.
                         }).then(function(response) {
                             let range = response.result;
+                            let filteredSheet;
                             if (range.values.length > 0) {
                                 for (let i = 0; i < range.values.length; i++) {
                                     let row = range.values[i];
                                     // Makes array from sheet
-                                    sheet.push([row[0],row[1],row[2]])
+                                    // if you want to use new array specific methods, feel free
+
+                                    // adds first 3 columns to sheet
+                                    // add more row[#] as needed
+                                    sheet.push([row[0], row[1], row[2]])
                                 }
+
+                                // removes duplicates from sheet
+                                filteredSheet = Array.from(new Set(sheet.map(JSON.stringify)), JSON.parse);
+
                                 //passes sheet to addData function
-                                filteredSheet= Array.from(new Set(sheet.map(JSON.stringify)), JSON.parse);
                                 addData(filteredSheet);
                             } else {
                                 appendPre('No data found.');

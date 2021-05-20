@@ -47,6 +47,16 @@
 
                 </table>
                 <script type="text/javascript">
+                    //-----------------------------------------\\
+                    //                                         \\
+                    //  IF YOU WANT SPECIFIC DOCUMENTATION     \\
+                    //  ON THE WAY THE SHEET API IS USED, LOOK \\
+                    //  AT THE FIND A PLANT PAGE. HERE I WILL  \\
+                    //  BE ONLY DOCUMENTING DIFFERENCES.       \\
+                    //                                         \\
+                    //-----------------------------------------\\
+
+
 
                     // Client ID and API key from the Developer Console
                     //let CLIENT_ID = '1013917813484-34c0pv9sct0m2ikhhfdf2ns16os4kdca.apps.googleusercontent.com';
@@ -130,10 +140,12 @@
                             let newCom = document.createTextNode(comName);
                             newComName.appendChild(newCom);
 
-                            //makes page heading
+                            //makes page heading, used for custom per bed headings
+                            //gets bedNum from URL after ?
                             let bedNum = window.location.search.substring(1);
                             document.getElementById("title").innerHTML= "Welcome to Bed " + bedNum;
                             document.getElementById("desc").innerHTML= "Below is a full list of the plants you will find at the " +sheet[0][4]  + " Bed"
+                            // links to blog from url in sheet
                             document.getElementById("more").href=sheet[0][5]
 
 
@@ -142,8 +154,12 @@
 
                     function genTable() {
                         let sheet=[];
+
+                        // gets text from url from the ? onward
+                        // used to generate table
+                        // this page will not generate a table without a bed number included in the URL after a ?
                         let inURL=window.location.search;
-                        //console.log(inURL);
+
                         gapi.client.sheets.spreadsheets.values.get({
                             spreadsheetId: '1iBzDvUJ2g16V2AyeZ_y1FHyBnzA33vipcjnI_IoAAO8',
                             range: 'A2:O',
@@ -152,14 +168,14 @@
                             if (range.values.length > 0) {
                                 for (let i = 0; i < range.values.length; i++) {
                                     let row = range.values[i];
-                                    // Makes array from sheet
+                                    // bedQuery is taken from the sheet's bed # column
                                     let bedQuery= "?" + row[3];
-                                    //console.log(bedQuery)
+
+                                    // if the value in the bed number of the row = the value in the URL, add that row to the array
                                     if(bedQuery === inURL) {
                                         sheet.push([row[0], row[1], row[2], row[3], row[4], row[5]])
                                     }
                                     }
-                                //passes sheet to addData function
                                 filteredSheet= Array.from(new Set(sheet.map(JSON.stringify)), JSON.parse);
                                 addData(filteredSheet);
                             } else {
