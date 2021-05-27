@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ebffd6-c8fa-45dc-98bc-cd757b890f33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TIDE logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NPTG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NPTG.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bed.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Find a Plant.html" beforeDir="false" afterPath="$PROJECT_DIR$/Find a Plant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -61,6 +61,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Web\NPTG" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Web\NPTG\test-scripts" />
       <recent name="B:\Programming\Web\NPTG\test-scripts" />
@@ -98,7 +101,7 @@
       <workItem from="1620849154602" duration="3109000" />
       <workItem from="1620854195579" duration="1680000" />
       <workItem from="1621450973275" duration="2671000" />
-      <workItem from="1621516919027" duration="2310000" />
+      <workItem from="1621516919027" duration="8370000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1617889198877</created>
@@ -268,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621453348472</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="improved documentation">
+      <created>1621519544255</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621519544255</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +316,7 @@
     <MESSAGE value="patched bed generation for the 4th time" />
     <MESSAGE value="added about this bed" />
     <MESSAGE value="added about page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added about page" />
+    <MESSAGE value="improved documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved documentation" />
   </component>
 </project>
