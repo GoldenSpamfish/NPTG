@@ -8,22 +8,22 @@ p {
     line-height: 130%;
 }
 body.map{
-    background-image: url(https://hgic.clemson.edu/wp-content/uploads/2018/09/Lobelia-cardinalis-2.jpg);
+    background-image: url(map-img.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 body.find{
-    background-image: url(https://www.directnativeplants.com/wp-content/uploads/photos/96626225.jpg);
+    background-image: url(find-img.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 body.bed{
-    background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2016/02/violet-type-768x514.jpg);
+    background-image: url(bed-img.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 body.about{
-    background-image: url(http://cdn.shopify.com/s/files/1/0072/0909/1117/products/butterfly_weed_5af6457f-2221-478a-a762-7b16160263ea_1024x1024.jpg?v=1574106843);
+    background-image: url(about-img.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
